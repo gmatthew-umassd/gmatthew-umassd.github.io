@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Major Assignment 3 - George Matthew</title>
+    <script src="lib/d3.js"></script>
+    <script src="lib/script.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+<!--    <h3>Network Visualization - Major Assignment 3</h3>-->
+<!--    <h5>George Matthew</h5>-->
+<div id="details" class="bordered">
+    <h4>Details</h4>
+    <div id="details-content">
+        <b>Title</b>: <br>
+        <b>Country:</b> <br>
+        <b>Citations:</b>
+    </div>
+</div>
+<div>
+    <div class="border">
+        <script>
+            d3.json("data/data_scopus_network.json")
+                .then((data) => {
+                    let svg = d3.select("body")
+                        .append("svg")
+                        .attr("viewBox", "0 0 1000 800")
+                        .attr("class", "bordered")
+                    simulate(data, svg)
+                })
+        </script>
+    </div>
+</div>
+</body>
+</html>

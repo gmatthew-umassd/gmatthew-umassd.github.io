@@ -1,0 +1,32 @@
+h3, h4, h5 {
+    text-align: center;
+    margin: 5px;
+}
+svg {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    padding: 5px;
+}
+circle {
+    fill-opacity: .9;
+}
+line {
+    stroke: #909090;
+    stroke-opacity: 0.6;
+}
+.bordered {
+    border: 2px solid black;
+    margin: 5px;
+}
+.inactive {
+    opacity: .1;
+}
+#details {
+    position: relative;
+    font-size: 12pt;
+    font-family: sans-serif;
+    height: 130px;
+    width: 70vw;
+    padding: 5px;
+}
